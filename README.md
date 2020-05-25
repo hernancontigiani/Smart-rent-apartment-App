@@ -2,16 +2,9 @@
 One of the most tedious thing is looking for new aparment, one of the most popular web used in Argentina for this purpose is Mercadolibre\
 This Rest API make scrapping from Mercadolibre search to get the information of thousands of apartments for rent, prince, location and make a intelligence analyisi to make something that could take as a week in a couple of seconds.
 
-# Descripción:
-Esta aplicación hecha en Python utiliza Flask para crear un WebServer que levanta los datos de alquileres de inmuebles
-y los presenta en un mapa distribuidos por su ubicación.\
-Además, los alquileres se identifican con colores en el mapa según el precio y relación con la media.
+# Enviroment:
+This API was made with Flask
 
-# Probar el programa en la nube
-Si desean probar como funciona este programa sin necesidad de descargar el código pueden ingresar al siguiente link:\
-[inove.api](http://inove.pythonanywhere.com/)
-
-Luego para utilizar la API les recomiendo que lean la sección de "__Como utilizar la API__".
 
 # Launch API
 Usage:
