@@ -28,7 +28,7 @@ After the program load all information of your zone, you will see all apartments
 - Red: Aparment rent price above average price.
 - Blue: Aparment rent price in dolars US$.
 
-![Inove banner](/images/mapa.png)
+![Inove banner](/images/map.png)
 
 - We could get the analysis from the group of aparments rent price with the following URL:
 
