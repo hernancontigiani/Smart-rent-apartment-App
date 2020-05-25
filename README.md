@@ -16,14 +16,14 @@ http://127.0.0.1:5000/
 
 # What you will see?
 After the program load all information of your zone, you will see all apartments for rent with differents colours based on the following analysis:
-- Green: Aparment rent price close to average price.
-- Yewllow: Aparment rent price bellow average price.
-- Red: Aparment rent price above average price.
-- Blue: Aparment rent price in dollars US$.
+- Green: Apartment rent price close to average price.
+- Yewllow: Apartment rent price bellow average price.
+- Red: Apartment rent price above average price.
+- Blue: Apartment rent price in dollars US$.
 
 ![Inove banner](/images/map.png)
 
-- We could get the analysis from the group of aparments rent price with the following URL:
+- We could get the analysis from the group of apartments rent price with the following URL:
 
 __URL report__\
 http://127.0.0.1:5000/reporte
