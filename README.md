@@ -1,6 +1,6 @@
-# Rent-Aparment-Search
+# Rent-Apartment-Search
 One of the most tedious thing is looking for new aparment, one of the most popular web used in Argentina for this purpose is Mercadolibre\
-This Rest API make scrapping from Mercadolibre search to get the information of thousands of apartments for rent, prince, location and make a intelligence analyisi to make something that could take as a week in a couple of seconds.
+This Rest API make scrapping from Mercadolibre search to get the information of thousands of apartments for rent, prince, location and make a intelligence analysis to make something that could take as a week in a couple of seconds.
 
 # Enviroment:
 This API was made with Flask
@@ -19,7 +19,7 @@ After the program load all information of your zone, you will see all apartments
 - Green: Aparment rent price close to average price.
 - Yewllow: Aparment rent price bellow average price.
 - Red: Aparment rent price above average price.
-- Blue: Aparment rent price in dolars US$.
+- Blue: Aparment rent price in dollars US$.
 
 ![Inove banner](/images/map.png)
 
