@@ -9,7 +9,7 @@ This API was made with Flask
 # Launch API
 Usage:
 First run the Rest API Flask server:\
-`python ./api.py`
+`python ./map.py`
 
 Then open your browser and enter this URL example:\
 http://127.0.0.1:5000/
