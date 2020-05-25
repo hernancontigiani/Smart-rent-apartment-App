@@ -32,14 +32,14 @@ After the program load all information of your zone, you will see all apartments
 
 - We could get the analysis from the group of aparments rent price with the following URL:
 
-__Versión offline__\
+__URL report__\
 http://127.0.0.1:5000/reporte
 
 ![Inove banner](/images/reporte.png)
 
 - We could get the prediction about the relation between price and size based on Machine Learning Linear Regression algorithm:
 
-__Versión offline__\
+__URL prediction__\
 http://127.0.0.1:5000/prediccion
 
 ![Inove banner](/images/prediccion.png)
