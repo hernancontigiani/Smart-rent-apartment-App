@@ -1,0 +1,101 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Rent-Apartment-Search-Api</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.topnav {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+		
+		.topnav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+		
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		.topnav a.active {
+		  background-color: #ddd;
+		  color: black;
+		}
+	
+		.container {
+			width: 164px;
+			height: 120px;
+			position: relative;
+			margin: 0 auto;
+		}
+		.container span {
+			width: 24px;
+			height: 20px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			display: block;
+			background-color: #9B5986;
+			animation: Loading 3s infinite ease-in-out; 
+		}
+		.container span:nth-of-type(2) { left: 30px; animation-delay: .2s; }
+		.container span:nth-of-type(3) { left: 60px; animation-delay: .4s; }
+		.container span:nth-of-type(4) { left: 90px; animation-delay: .6s; }
+		.container span:last-of-type { left: 120px; animation-delay: .8s; }
+
+		@keyframes Loading {
+			0% { height: 20px; transform: scaleY(); background-color: #9B59B6; }
+			50% { height: 20px; transform: scaleY(3.4); background-color: #3498D6; }
+			100% { height: 20px; transform: scaleY(); background-color: #9B59B6; }
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="topnav">
+		<a class="active" href="{{url_for('map')}}">Home</a>
+		<a href="{{url_for('reporte')}}">Report</a>
+		<a href="{{url_for('ml')}}">Machine Learning</a>
+		<a href="{{url_for('about')}}">About</a>
+  	</div><br>
+
+	<div id="pulso_div">
+		<span style="font-size: 150%; color: rgb(114, 52, 230);"></span>
+		<label for="username">Ciudad:</label>
+		<input id="city" type="city" value="{{city}}">
+		<button type="button" id="search">Buscar</button>
+	</div>
+	<br>
+
+	<div class="container">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<h2>Loading...</h2>
+	  </div>
+
+	<div id="mapdiv" class="mapdiv"></div>
+	<div><p>Autor: Hernan Contigiani</p></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.11/lib/OpenLayers.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="{{ url_for('static', filename="js/mapload.js")}}"></script>
+  
+</body>
+</html>

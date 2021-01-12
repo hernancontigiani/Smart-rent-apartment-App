@@ -1,0 +1,83 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Rent-Apartment-Search-Api</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.topnav {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+		
+		.topnav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+		
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		.topnav a.active {
+		  background-color: #ddd;
+		  color: black;
+		}
+	</style>
+
+</head>
+
+	<div class="topnav">
+		<a class="active" href="{{url_for('map')}}">Home</a>
+		<a href="{{url_for('reporte')}}">Report</a>
+		<a href="{{url_for('ml')}}">Machine Learning</a>
+		<a href="{{url_for('about')}}">About</a>
+  	</div><br>
+
+	<p>Gráfico de alquileres de la zona precio/m2</p>
+	<div class="graph" id="overview"><img id="img" src=""></div>
+
+	<label for="clusterAlgorithms">Seleccionar algoritmo de clustering:</label>
+	<select name="clusterAlgorithms" id="clusterAlgorithms">
+		<option value="Birch">Birch</option>
+		<option value="KMeans">KMeans</option>
+		<option value="Gaussian">Gaussian</option>
+		<option value="Spectral">Spectral</option>
+	</select>
+	<br>
+	<label for="username">Cantidad de clusters:</label>
+	<input id="clusters" type="clusters" value="2">
+	<br>
+	<button type="button" id="process">Procesar</button>
+	<br><br>
+
+	<div class="graph" id='result'></div>
+
+
+
+	<br>
+
+	<div><p>Autor: Hernan Contigiani</p></div>
+
+	<script>
+		data = "{{overview_graph}}"
+    	data = data.replace("b&#39;", "") //to get rid of start curly brace code 
+    	data = data.replace("&#39;", "")  //to get rid of end curly bracecode 
+
+    	document.getElementById("img").src = "data:image/png;base64," + data; // set src
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="{{ url_for('static', filename="js/ml.js")}}"></script>
+  
+</body>
+</html>
