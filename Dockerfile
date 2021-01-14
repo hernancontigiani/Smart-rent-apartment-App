@@ -5,7 +5,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copy app code
-WORKDIR ./app
+WORKDIR /opt/app
 COPY ./app .
 
 CMD python ./app.py
