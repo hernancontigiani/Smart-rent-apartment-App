@@ -9,10 +9,14 @@ This API was made with Flask
 # Launch API
 Usage:
 First run the Rest API Flask server:\
-`python ./map.py`
+```
+cd ./app
+python app.py
+```
 
 Then open your browser and enter this URL example:\
 http://127.0.0.1:5000/
+
 
 # What you will see?
 After the program load all information of your zone, you will see all apartments for rent with differents colours based on the following analysis:
@@ -21,24 +25,17 @@ After the program load all information of your zone, you will see all apartments
 - Red: Apartment rent price above average price.
 - Blue: Apartment rent price in dollars US$.
 
-![Inove banner](/images/map.png)
+By default it is loaded Capital Federal aparments, but you could look for other places:
 
-- We could get the analysis from the group of apartments rent price with the following URL:
+![map](/images/map.png)
 
-__URL report__\
-http://127.0.0.1:5000/reporte
+- You could get the analysis from the group of apartments by click on "Report" tab
+![reporte](/images/reporte.png)
 
-![Inove banner](/images/reporte.png)
-
-- We could get the prediction about the relation between price and size based on Machine Learning Linear Regression algorithm:
-
-__URL prediction__\
-http://127.0.0.1:5000/prediccion
-
-![Inove banner](/images/prediccion.png)
+- YOu could get the prediction about the relation between price and size based on Machine Learning Linear Regression algorithm and Clustering algorthms by click on "Machine Learning":
+![ml1](/images/machine_learning1.png)\
+![ml2](/images/machine_learning2.png)
 
 # Thanks!
-
-Feel free to contact me by mail _hernan4790@gmail.com_ for any doubt..
-
+Feel free to contact me by mail _hernan4790@gmail.com_ for any doubt..\
 Enjoy :smile:!!

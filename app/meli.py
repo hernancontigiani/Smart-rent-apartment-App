@@ -180,7 +180,7 @@ class mercadolibreAPI:
     def export_csv(self):
         file_name = "propiedades2" + ".csv"
         
-        with open(file_name,"w+") as file:
+        with open(file_name,"w+") as file_name:
             if self.debug:
                 print("Guardando archivo", file_name)
             self.df.to_csv(file_name, sep=",", decimal=".")
