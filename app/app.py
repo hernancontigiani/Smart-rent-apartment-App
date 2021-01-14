@@ -167,13 +167,8 @@ def ml():
 
 @app.route("/about")
 def about():
-    return redirect(url_for('/'))
+    return redirect(url_for('map'))
 
 
-if __name__ == '__main__':
-    try:
-        port = int(sys.argv[1]) # This is for a command-line argument
-    except:
-        port = 5000 # Puerto default
-        
-    app.run(host='0.0.0.0', port=port, debug=True)
+if __name__ == '__main__':       
+    app.run(host='0.0.0.0', port=5000, debug=True)
