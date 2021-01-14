@@ -1,0 +1,8 @@
+requests
+flask
+pandas
+scikit-learn
+numpy
+matplotlib
+seaborn
+aiohttp
