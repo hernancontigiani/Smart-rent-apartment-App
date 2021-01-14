@@ -5,7 +5,6 @@ This Rest API make scrapping from Mercadolibre search to get the information of 
 # Enviroment:
 This API was made with Flask
 
-
 # Launch API
 Usage:
 First run the Rest API Flask server:
@@ -32,8 +31,8 @@ By default it's loaded Capital Federal aparments, but you could look for other p
 ![reporte](/images/reporte.png)
 
 - You could get the prediction about the relation between price and size based on Machine Learning Linear Regression algorithm and Clustering algorthms by click on "Machine Learning":\
-![ml1](/images/machine_learning1.png)\\
-![ml2](/images/machine_learning2.png)
+![ml1](/images/machine_learning_1.png)\
+![ml2](/images/machine_learning_2.png)
 
 # Docker
 If you have Docker install you could build and start the app with the following commands:
@@ -48,5 +47,5 @@ docker-compose up
 ```
 
 # Thanks!
-Feel free to contact me by mail _hernan4790@gmail.com_ for any doubt..\
+Feel free to contact me by mail _hernan4790@gmail.com_ for any doubt.\
 Enjoy :smile:!!
